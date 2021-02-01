@@ -1,10 +1,14 @@
 /* COPYRIGHT 2021 SITEHEFT */
 
-$("#sh-hero-vid").ready(() => {
-  var heroVid = document.querySelector("#sh-hero-vid");
-  var heroVidPlay = heroVid.play();
-  heroVid.onplaying = startHeroTextChange()
-});
+
+var heroVid = document.querySelector("#sh-hero-vid");
+var checkHeroVidLoadedInterval = setInterval(() => {
+  if (heroVid.readyState == 4) {
+    var heroVidPlay = heroVid.play();
+    heroVid.onplaying = startHeroTextChange();
+    clearInterval(checkHeroVidLoadedInterval);
+  }
+}, 1);
 
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
