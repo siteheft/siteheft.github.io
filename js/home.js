@@ -18,14 +18,14 @@ function startHeroTextChange() {
       document.querySelector("#shHeroChangingText").classList.add("fade-out");
       setTimeout(() => {
         document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-      }, 1200)
+      }, 1300)
     } else {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
       document.querySelector("#shHeroChangingText").classList.add("fade-out");
       setTimeout(() => {
         document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-      }, 1200)
+      }, 1300)
     }
   }, 7000)
 }
