@@ -18,7 +18,7 @@ function startHeroTextChange() {
       document.querySelector("#shHeroChangingText").classList.add("fadeChangingText");
       setTimeout(() => {
         document.querySelector("#shHeroChangingText").classList.remove("fadeChangingText");
-      }, 100)
+      }, 50)
     } else {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
