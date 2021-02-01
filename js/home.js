@@ -10,15 +10,14 @@ $(document).ready(function() {
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
   var counter = 0;
-  var text = document.querySelector("#shHeroChangingText").innerText
   setInterval(() => {
     console.log(`counter: ${counter}`)
     if (counter == 5) {
       counter = 0;
-      text = heroTextArray[counter];
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
     } else {
       counter += 1
-      text = heroTextArray[counter];
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
     }
   }, 7000)
 }
