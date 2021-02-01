@@ -11,12 +11,15 @@ function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
   var counter = 1;
   setInterval(() => {
+    document.querySelector("#shHeroChangingText").classList.remove("fadeChangingText");
     if (counter == 5) {
       counter = 0;
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
+      document.querySelector("#shHeroChangingText").classList.add("fadeChangingText");
     } else {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
+      document.querySelector("#shHeroChangingText").classList.add("fadeChangingText");
     }
   }, 7500)
 }
