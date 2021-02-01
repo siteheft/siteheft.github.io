@@ -11,7 +11,7 @@ function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
   var counter = 0;
   var text = document.querySelector("#shHeroChangingText").innerText
-  setTimeout(() => {
+  setInterval(() => {
     console.log(`counter: ${counter}`)
     if (counter == 5) {
       counter = 0;
