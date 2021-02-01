@@ -2,7 +2,6 @@
 
 $(document).ready(function() {
   var heroVid = document.querySelector("#sh-hero-vid");
-  heroVid.innerHTML = "<source src=\"/wp-content/uploads/2021/02/hero.mp4\">";
   var heroVidPlay = heroVid.play();
   heroVid.onplaying = startHeroTextChange()
 });
@@ -18,14 +17,14 @@ function startHeroTextChange() {
       document.querySelector("#shHeroChangingText").classList.add("fade-out");
       setTimeout(() => {
         document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-      }, 1350)
+      }, 1000)
     } else {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
       document.querySelector("#shHeroChangingText").classList.add("fade-out");
       setTimeout(() => {
         document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-      }, 1350)
+      }, 1000)
     }
   }, 7000)
 }
