@@ -15,20 +15,20 @@ function startHeroTextChange() {
     if (counter == 5) {
       counter = 0;
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
-      document.querySelector("#shHeroChangingText").classList.remove("fadeIn");
-      document.querySelector("#shHeroChangingText").classList.add("fadeOut");
+      document.querySelector("#shHeroChangingText").classList.remove("fade-in");
+      document.querySelector("#shHeroChangingText").classList.add("fade-out");
       setTimeout(() => {
-        document.querySelector("#shHeroChangingText").classList.remove("fadeOut");
-        document.querySelector("#shHeroChangingText").classList.add("fadeIn");
+        document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        document.querySelector("#shHeroChangingText").classList.add("fade-in");
       }, 200)
     } else {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
-      document.querySelector("#shHeroChangingText").classList.remove("fadeIn");
-      document.querySelector("#shHeroChangingText").classList.add("fadeOut");
+      document.querySelector("#shHeroChangingText").classList.remove("fade-in");
+      document.querySelector("#shHeroChangingText").classList.add("fade-out");
       setTimeout(() => {
-        document.querySelector("#shHeroChangingText").classList.remove("fadeOut");
-        document.querySelector("#shHeroChangingText").classList.add("fadeIn");
+        document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        document.querySelector("#shHeroChangingText").classList.add("fade-in");
       }, 200)
     }
   }, 7000)
