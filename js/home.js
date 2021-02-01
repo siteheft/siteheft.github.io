@@ -8,7 +8,7 @@ var checkHeroVidLoadedInterval = setInterval(() => {
     heroVid.onplaying = startHeroTextChange();
     clearInterval(checkHeroVidLoadedInterval);
   }
-}, 1);
+}, 0);
 
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
