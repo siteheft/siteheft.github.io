@@ -16,10 +16,12 @@ function startHeroTextChange() {
       counter = 0;
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
       document.querySelector("#shHeroChangingText").classList.add("fadeChangingText");
+      document.querySelector("#shHeroChangingText").classList.remove("fadeChangingText");
     } else {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
       document.querySelector("#shHeroChangingText").classList.add("fadeChangingText");
+      document.querySelector("#shHeroChangingText").classList.remove("fadeChangingText");
     }
   }, 7200)
 }
