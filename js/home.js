@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
-  var counter = 1;
+  var counter = 0;
   setInterval(() => {
     if (counter == 5) {
       counter = 0;
