@@ -1,10 +1,11 @@
 /* COPYRIGHT 2021 SITEHEFT */
 
-$(document).ready(function() {
-  document.querySelector("#sh-hero-vid").addEventListener('change', alert("change"))
-  var heroVid = document.querySelector("#sh-hero-vid");
-  var heroVidPlay = heroVid.play();
-  heroVid.onplaying = startHeroTextChange()
+var heroVid = document.querySelector("#sh-hero-vid");
+heroVid.addEventListener("change", () => {
+  if (heroVid.readyState == 4) {
+    var heroVidPlay = heroVid.play();
+    heroVid.onplaying = startHeroTextChange()
+  }
 });
 
 function startHeroTextChange() {
