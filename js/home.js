@@ -11,7 +11,6 @@ function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
   var counter = 1;
   setInterval(() => {
-    console.log(`counter: ${counter}`)
     if (counter == 5) {
       counter = 0;
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
@@ -19,5 +18,5 @@ function startHeroTextChange() {
       counter += 1
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
     }
-  }, 7000)
+  }, 7500)
 }
