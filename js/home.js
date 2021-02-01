@@ -12,6 +12,7 @@ function startHeroTextChange() {
   var counter = 0;
   var text = document.querySelector("#shHeroChangingText").innerText
   setTimeout(() => {
+    console.log(`counter: ${counter}`)
     if (counter == 5) {
       counter = 0;
       text = heroTextArray[counter];
