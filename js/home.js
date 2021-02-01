@@ -1,6 +1,7 @@
 /* COPYRIGHT 2021 SITEHEFT */
 
-$("#sh-hero-vid").ready(function() {
+$(document).ready(function() {
+  alert(`video ready: ${document.querySelector("#sh-hero-vid").readyState}`);
   var heroVid = document.querySelector("#sh-hero-vid");
   var heroVidPlay = heroVid.play();
   heroVid.onplaying = startHeroTextChange()
