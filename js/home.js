@@ -1,11 +1,9 @@
 /* COPYRIGHT 2021 SITEHEFT */
 
-var heroVid = document.querySelector("#sh-hero-vid");
-heroVid.addEventListener("change", () => {
-  if (heroVid.readyState == 4) {
-    var heroVidPlay = heroVid.play();
-    heroVid.onplaying = startHeroTextChange()
-  }
+$("#sh-hero-vid").ready(() => {
+  var heroVid = document.querySelector("#sh-hero-vid");
+  var heroVidPlay = heroVid.play();
+  heroVid.onplaying = startHeroTextChange()
 });
 
 function startHeroTextChange() {
