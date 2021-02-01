@@ -20,5 +20,5 @@ function startHeroTextChange() {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
       document.querySelector("#shHeroChangingText").classList.add("fadeChangingText");
     }
-  }, 7300)
+  }, 7200)
 }
