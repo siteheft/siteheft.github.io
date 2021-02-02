@@ -15,8 +15,7 @@ function startHeroTextChange() {
   heroVid.addEventListener("timeupdate", () => {
     if (heroVid.currentTime >= 0 && heroVid.currentTime < 1) {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[0];
-    }
-    else if (heroVid.currentTime >= 7 && heroVid.currentTime < 8) {
+    } else if (heroVid.currentTime >= 7 && heroVid.currentTime < 8) {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[1];
     } else if (heroVid.currentTime >= 14 && heroVid.currentTime < 15) {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[2];
