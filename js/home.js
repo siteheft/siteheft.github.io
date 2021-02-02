@@ -12,23 +12,20 @@ var checkHeroVidLoadedInterval = setInterval(() => {
 
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
-  var counter = 0;
-  setInterval(() => {
-    document.querySelector("#shHeroChangingText").classList.remove("fadeChangingText");
-    if (counter == 5) {
-      counter = 0;
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
-      document.querySelector("#shHeroChangingText").classList.add("fade-out");
-      setTimeout(() => {
-        document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-      }, 1000)
-    } else {
-      counter += 1
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[counter];
-      document.querySelector("#shHeroChangingText").classList.add("fade-out");
-      setTimeout(() => {
-        document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-      }, 1000)
+  heroVid.addEventListener("timeupdate", () => {
+    if (heroVid.currentTime >= 0 && heroVid.currentTime < 1) {
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[0];
     }
-  }, 7000)
+    else if (heroVid.currentTime >= 7 && heroVid.currentTime < 8) {
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[1];
+    } else if (heroVid.currentTime >= 14 && heroVid.currentTime < 15) {
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[2];
+    } else if (heroVid.currentTime >= 21 && heroVid.currentTime < 22) {
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[3];
+    } else if (heroVid.currentTime >= 28 && heroVid.currentTime < 29) {
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[4];
+    } else if (heroVid.currentTime >= 35 && heroVid.currentTime < 26) {
+      document.querySelector("#shHeroChangingText").innerText = heroTextArray[5];
+    } 
+  }, false)
 }
