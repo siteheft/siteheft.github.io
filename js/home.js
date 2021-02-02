@@ -23,7 +23,7 @@ function startHeroTextChange() {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[3];
     } else if (heroVid.currentTime >= 28 && heroVid.currentTime < 29) {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[4];
-    } else if (heroVid.currentTime >= 35 && heroVid.currentTime < 26) {
+    } else if (heroVid.currentTime >= 35 && heroVid.currentTime < 36) {
       document.querySelector("#shHeroChangingText").innerText = heroTextArray[5];
     } 
   }, false)
