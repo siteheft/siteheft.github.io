@@ -2,13 +2,10 @@
 
 
 var heroVid = document.querySelector("#sh-hero-vid");
-var checkHeroVidLoadedInterval = setInterval(() => {
-  if (heroVid.readyState == 4) {
+$(document).ready(() => {
     var heroVidPlay = heroVid.play();
     heroVid.onplaying = startHeroTextChange();
-    clearInterval(checkHeroVidLoadedInterval);
-  }
-}, 0);
+});
 
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
