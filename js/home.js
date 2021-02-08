@@ -18,7 +18,7 @@ function startHeroTextChange() {
         document.querySelector("#shHeroChangingText").classList.add("fade-out");
         setTimeout(() => {
           document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-        }, 1000)
+        }, 800)
         setTimeout(() => {
           locked = false;
         }, 5000)
@@ -30,7 +30,7 @@ function startHeroTextChange() {
         document.querySelector("#shHeroChangingText").classList.add("fade-out");
         setTimeout(() => {
           document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-        }, 1000)
+        }, 800)
         setTimeout(() => {
           locked = false;
         }, 5000)
@@ -42,7 +42,7 @@ function startHeroTextChange() {
         document.querySelector("#shHeroChangingText").classList.add("fade-out");
         setTimeout(() => {
           document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-        }, 1000)
+        }, 800)
         setTimeout(() => {
           locked = false;
         }, 5000)
@@ -54,7 +54,7 @@ function startHeroTextChange() {
         document.querySelector("#shHeroChangingText").classList.add("fade-out");
         setTimeout(() => {
           document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-        }, 1000)
+        }, 800)
         setTimeout(() => {
           locked = false;
         }, 5000)
@@ -66,7 +66,7 @@ function startHeroTextChange() {
         document.querySelector("#shHeroChangingText").classList.add("fade-out");
         setTimeout(() => {
           document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-        }, 1000)
+        }, 800)
         setTimeout(() => {
           locked = false;
         }, 5000)
@@ -78,7 +78,7 @@ function startHeroTextChange() {
         document.querySelector("#shHeroChangingText").classList.add("fade-out");
         setTimeout(() => {
           document.querySelector("#shHeroChangingText").classList.remove("fade-out");
-        }, 1000)
+        }, 800)
         setTimeout(() => {
           locked = false;
         }, 5000)
