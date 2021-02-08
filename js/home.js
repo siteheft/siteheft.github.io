@@ -9,19 +9,80 @@ $(document).ready(() => {
 
 function startHeroTextChange() {
   var heroTextArray = ["your photos", "your dish", "your creativity", "your moves", "your craft", "your adventures"];
+  var locked = false;
   heroVid.addEventListener("timeupdate", () => {
     if (heroVid.currentTime >= 6.5 && heroVid.currentTime < 8) {
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[1];
+      if (!locked) {
+        locked = true;
+        document.querySelector("#shHeroChangingText").innerText = heroTextArray[1];
+        document.querySelector("#shHeroChangingText").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        }, 1000)
+        setTimeout(() => {
+          locked = false;
+        }, 5000)
+      }
     } else if (heroVid.currentTime >= 13.5 && heroVid.currentTime < 15) {
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[2];
+      if (!locked) {
+        locked = true;
+        document.querySelector("#shHeroChangingText").innerText = heroTextArray[2];
+        document.querySelector("#shHeroChangingText").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        }, 1000)
+        setTimeout(() => {
+          locked = false;
+        }, 5000)
+      }
     } else if (heroVid.currentTime >= 20.5 && heroVid.currentTime < 22) {
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[3];
+      if (!locked) {
+        locked = true;
+        document.querySelector("#shHeroChangingText").innerText = heroTextArray[3];
+        document.querySelector("#shHeroChangingText").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        }, 1000)
+        setTimeout(() => {
+          locked = false;
+        }, 5000)
+      }
     } else if (heroVid.currentTime >= 27.5 && heroVid.currentTime < 29) {
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[4];
+      if (!locked) {
+        locked = true;
+        document.querySelector("#shHeroChangingText").innerText = heroTextArray[4];
+        document.querySelector("#shHeroChangingText").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        }, 1000)
+        setTimeout(() => {
+          locked = false;
+        }, 5000)
+      }
     } else if (heroVid.currentTime >= 34.5 && heroVid.currentTime < 36) {
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[5];
+      if (!locked) {
+        locked = true;
+        document.querySelector("#shHeroChangingText").innerText = heroTextArray[5];
+        document.querySelector("#shHeroChangingText").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        }, 1000)
+        setTimeout(() => {
+          locked = false;
+        }, 5000)
+      }
     } else if (heroVid.currentTime >= 41.5 && heroVid.currentTime < 43) {
-      document.querySelector("#shHeroChangingText").innerText = heroTextArray[0];
+      if (!locked) {
+        locked = true;
+        document.querySelector("#shHeroChangingText").innerText = heroTextArray[0];
+        document.querySelector("#shHeroChangingText").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector("#shHeroChangingText").classList.remove("fade-out");
+        }, 1000)
+        setTimeout(() => {
+          locked = false;
+        }, 5000)
+      }
     } 
   }, false)
 }
