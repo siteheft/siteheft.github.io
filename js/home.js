@@ -91,8 +91,8 @@ window.onscroll = () => {
         document.querySelector(".sh-nav").style.backgroundColor = "white";
         document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
         document.querySelector(".shLogo").style.fill = "#d14739";
-        document.querySelector(".navGrp1").style.color = "#d14739";
-        document.querySelector(".navGrp2").style.color = "#d14739";
+        document.querySelector(".navGrp1").style.color = "black";
+        document.querySelector(".navGrp2").style.color = "black";
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "";
         document.querySelector(".sh-nav").style.boxShadow = "";
