@@ -86,3 +86,10 @@ function startHeroTextChange() {
     } 
   }, false)
 }
+window.onscroll = () => {
+    if (window.scrollY > 65) {
+        document.querySelector(".sh-nav").style.backgroundColor = "white";
+    } else {
+        document.querySelector(".sh-nav").style.backgroundColor = "";
+    }
+}
