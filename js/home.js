@@ -89,7 +89,15 @@ function startHeroTextChange() {
 window.onscroll = () => {
     if (window.scrollY > 65) {
         document.querySelector(".sh-nav").style.backgroundColor = "white";
+        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+        document.querySelector(".shLogo").style.fill = "#d14739";
+        document.querySelector(".navGrp1").style.color = "#d14739";
+        document.querySelector(".navGrp2").style.color = "#d14739";
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "";
+        document.querySelector(".sh-nav").style.boxShadow = "";
+        document.querySelector(".shLogo").style.fill = "#ffffff";
+        document.querySelector(".navGrp1").style.color = "white";
+        document.querySelector(".navGrp2").style.color = "white";
     }
 }
