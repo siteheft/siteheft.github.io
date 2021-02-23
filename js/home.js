@@ -108,4 +108,9 @@ $.ajax({
 }).then(res => {
     var resArray = res.split("\n");
     var locale = resArray[8].substring(4,6);
+    for (var index = 0; index < supportNumbers.length; index ++) {
+        if(supportNumbers[index].code == locale) {
+            console.log("hi")
+        } 
+    }
 });
