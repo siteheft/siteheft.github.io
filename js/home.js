@@ -122,7 +122,7 @@ $.ajax({
     for (var index = 0; index < supportNumbers.length; index ++) {
         if(supportNumbers[index].code == locale) {
             document.querySelector(".sh-section3-phone-location-display").innerHTML = `<div class="text"><i class="${locale.toLowerCase()} flag"></i>${supportNumbers[index].location}</div>`;
-            document.querySelector("input[sh-section3-phone-location-input]").value = "sg";
+            document.querySelector("input[name=sh-section3-phone-location-input]").value = "sg";
             document.querySelector("div[data-value=global]").classList.remove("active");
             document.querySelector("div[data-value=global]").classList.remove("selected");
             document.querySelector(`div[data-value=${locale.toLowerCase()}]`).classList.add("active");
