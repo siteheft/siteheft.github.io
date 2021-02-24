@@ -108,7 +108,7 @@ document.querySelector("input[name=sh-section3-phone-location-input]").addEventL
     for (var index = 0; index < supportNumbers.length; index ++) {
         if(supportNumbers[index].code == locationValue) {
             document.querySelector(".sh-section3-phone-number").innerText = supportNumbers[index].display_phone;
-            document.querySelector(".name=sh-section3-phone-number").href = supportNumbers[index].phone_link;
+            document.querySelector(".sh-section3-phone-number").href = supportNumbers[index].phone_link;
         }
     }
 });
