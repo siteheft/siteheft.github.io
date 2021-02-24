@@ -110,7 +110,11 @@ $.ajax({
     var locale = resArray[8].substring(4,6);
     for (var index = 0; index < supportNumbers.length; index ++) {
         if(supportNumbers[index].code == locale) {
-            document.querySelector(`div[data-value=${locale.toLowerCase()}]`).click()
+            document.querySelector(".sh-section3-phone-location-display").innerHTML = `<div class="text"><i class="${locale.toLowerCase()} flag"></i>${supportNumbers[index].location}</div>`;
+            document.querySelector("div[data-value=global]").classList.remove("active");
+            document.querySelector("div[data-value=global]").classList.remove("selected");
+            document.querySelector(`div[data-value=${locale.toLowerCase()}]`).classList.add("active");
+            document.querySelector(`div[data-value=${locale.toLowerCase()}]`).classList.add("selected");
         } 
     }
 });
