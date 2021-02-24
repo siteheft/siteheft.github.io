@@ -110,6 +110,7 @@ document.querySelector(".sh-section3-phone-location-input").addEventListener("ch
             document.querySelector(".sh-section3-phone-number").innerText = supportNumbers[index].display_phone;
             document.querySelector(".sh-section3-phone-number").href = supportNumbers[index].phone_link;
         }
+    }
 });
 
 
