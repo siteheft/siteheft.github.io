@@ -102,6 +102,7 @@ window.onscroll = () => {
         document.querySelector(".shLogo").style.fill = "#ffffff";
         document.querySelector(".navGrp1").style.color = "white";
         document.querySelector(".navGrp2").style.color = "white";
+        locked = false;
     }
 }
 
