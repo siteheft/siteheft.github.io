@@ -86,12 +86,16 @@ function startHeroTextChange() {
   }, false)
 }
 window.onscroll = () => {
+    var locked = false;
     if (window.scrollY > 65) {
-        document.querySelector(".sh-nav").style.backgroundColor = "white";
-        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
-        document.querySelector(".shLogo").style.fill = "#d14739";
-        document.querySelector(".navGrp1").style.color = "black";
-        document.querySelector(".navGrp2").style.color = "black";
+        if (!locked) {
+            document.querySelector(".sh-nav").style.backgroundColor = "white";
+            document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+            document.querySelector(".shLogo").style.fill = "#d14739";
+            document.querySelector(".navGrp1").style.color = "black";
+            document.querySelector(".navGrp2").style.color = "black";
+            locked = true;
+        }
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "";
         document.querySelector(".sh-nav").style.boxShadow = "";
