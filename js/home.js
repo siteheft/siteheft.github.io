@@ -132,3 +132,12 @@ $.ajax({
         } 
     }
 });
+
+function navDomains() {
+    if(document.querySelector("#navDomains").classList.contains("sh-nav-selected")) {
+    } else {
+        document.querySelector("#navDomains").classList.add("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+    }
+}
