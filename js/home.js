@@ -156,5 +156,6 @@ function navDomainsClick() {
         document.querySelector(".sh-background").style.display = "block";
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".sh-background").setAttribute("onclick", "navDomainsClick()");
     }
 }
