@@ -143,7 +143,7 @@ function navDomainsClick() {
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
         document.querySelector(".sh-nav-dropdown").style.display = "none";
-        document.querySelector(".sh-container").style.overflowY = "scroll";
+        document.querySelector("body").style.overflowY = "scroll";
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "white";
         document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
@@ -153,6 +153,6 @@ function navDomainsClick() {
         document.querySelector("#navDomains").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
-        document.querySelector(".sh-container").style.overflowY = "hidden";
+        document.querySelector("body").style.overflowY = "hidden";
     }
 }
