@@ -144,7 +144,7 @@ function navDomainsClick() {
         }
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.visibility = "hidden";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "white";
@@ -154,7 +154,7 @@ function navDomainsClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navDomains").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.visibility = "visible";
         document.querySelector("body").style.overflowY = "hidden";
     }
 }
