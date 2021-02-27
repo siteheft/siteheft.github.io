@@ -135,11 +135,13 @@ $.ajax({
 
 function navDomainsClick() {
     if(document.querySelector("#navDomains").classList.contains("sh-nav-selected")) {
-        document.querySelector(".sh-nav").style.backgroundColor = "";
-        document.querySelector(".sh-nav").style.boxShadow = "";
-        document.querySelector(".shLogo").style.fill = "#ffffff";
-        document.querySelector(".navGrp1").style.color = "white";
-        document.querySelector(".navGrp2").style.color = "white";
+        if (window.scrollY < 65) {
+            document.querySelector(".sh-nav").style.backgroundColor = "";
+            document.querySelector(".sh-nav").style.boxShadow = "";
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
         document.querySelector(".sh-nav-dropdown").style.display = "none";
