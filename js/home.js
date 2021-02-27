@@ -133,7 +133,7 @@ $.ajax({
     }
 });
 
-function navDomains() {
+function navDomainsClick() {
     if(document.querySelector("#navDomains").classList.contains("sh-nav-selected")) {
     } else {
         document.querySelector("#navDomains").classList.add("sh-nav-selected");
