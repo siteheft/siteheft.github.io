@@ -157,5 +157,26 @@ function navDomainsClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navDomainsClick()");
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Domain Search</span>
+        <div class="sh-nav-dropdown-searchgrp">
+            <input class="sh-nav-dropdown-search" type="text" placeholder="Find your new domain"><button class="sh-nav-dropdown-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
+        </div>
+        <span class="sh-nav-dropdown-title">Other Domain Services</span>
+        <ul class="sh-nav-dropdown-otherdomainservices">
+            <li><a href="">Bulk Registration</a></li>
+            <li><a href="">Domain Transfer</a></li>
+            <li><a href="">Bulk Transfer</a></li>
+            <li><a href="">Domain Backorder</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why Choose SiteHeft Domains?</span>
+            <span class="sh-nav-dropdown-subtitle">Be spoilt for choice</span>
+            <span class="sh-nav-dropdown-description">Get .photos for your photography portfolio or .kitchen for your restaurant. Find your unique domain with over 500 domain extensions to choose from.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">We value your privacy</span>
+            <span class="sh-nav-dropdown-description">We hide your name, address, phone number and email from our WHOIS directory for free on applicable domains.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>More reasons to choose SiteHeft Domains</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 }
