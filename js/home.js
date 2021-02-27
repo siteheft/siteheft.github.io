@@ -135,6 +135,14 @@ $.ajax({
 
 function navDomainsClick() {
     if(document.querySelector("#navDomains").classList.contains("sh-nav-selected")) {
+        document.querySelector(".sh-nav").style.backgroundColor = "";
+        document.querySelector(".sh-nav").style.boxShadow = "";
+        document.querySelector(".shLogo").style.fill = "#ffffff";
+        document.querySelector(".navGrp1").style.color = "white";
+        document.querySelector(".navGrp2").style.color = "white";
+        document.querySelector("#navDomains").classList.remove("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "white";
         document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
