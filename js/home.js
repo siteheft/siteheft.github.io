@@ -272,7 +272,7 @@ function navHostingClick() {
             <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
             <span class="sh-nav-dropdown-description">Your website deserves a good home. We partnered with the world's largest web host to bring your website reliability and performance.</span>
             <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
-            <span class="sh-nav-dropdown-description"></span>
+            <span class="sh-nav-dropdown-description">Outgrew your current plan? No worries, just a few clicks and your website is ready to take on the world. </span>
             <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Web Hosting</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
