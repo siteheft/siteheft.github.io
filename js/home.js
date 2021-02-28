@@ -163,7 +163,7 @@ function navDomainsClick() {
             <input class="sh-nav-dropdown-search" type="text" placeholder="Find your new domain"><button class="sh-nav-dropdown-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
         </div>
         <span class="sh-nav-dropdown-title">Other Domain Services</span>
-        <ul class="sh-nav-dropdown-otherdomainservices">
+        <ul class="sh-nav-dropdown-navlinks">
             <li><a href="">Bulk Registration</a></li>
             <li><a href="">Domain Transfer</a></li>
             <li><a href="">Bulk Transfer</a></li>
