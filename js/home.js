@@ -180,3 +180,47 @@ function navDomainsClick() {
         </div>`;
     }
 }
+
+function navWebsitesClick() {
+    if(document.querySelector("#navWebsites").classList.contains("sh-nav-selected")) {
+        if (window.scrollY < 65) {
+            document.querySelector(".sh-nav").style.backgroundColor = "";
+            document.querySelector(".sh-nav").style.boxShadow = "";
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
+        document.querySelector("#navWebsites").classList.remove("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector("body").style.overflowY = "scroll";
+    } else {
+        document.querySelector(".sh-nav").style.backgroundColor = "white";
+        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+        document.querySelector(".shLogo").style.fill = "#d14739";
+        document.querySelector(".navGrp1").style.color = "black";
+        document.querySelector(".navGrp2").style.color = "black";
+        document.querySelector("#navWebsites").classList.add("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".sh-background").setAttribute("onclick", "navWebsitesClick()");
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Websites</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Website Builder</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why Use SiteHeft Website Builder?</span>
+            <span class="sh-nav-dropdown-subtitle">Be spoilt for choice</span>
+            <span class="sh-nav-dropdown-description">Get .photos for your photography portfolio or .kitchen for your restaurant. Find your unique domain with over 500 domain extensions to choose from.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">We value your privacy</span>
+            <span class="sh-nav-dropdown-description">We hide your name, address, phone number and email from our WHOIS directory for free on applicable domains.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>More reasons to choose SiteHeft Domains</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
+    }
+}
+
