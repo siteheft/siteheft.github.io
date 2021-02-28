@@ -223,9 +223,9 @@ function navWebsitesClick() {
             <span class="sh-nav-dropdown-title">Why Use SiteHeft Website Builder?</span>
             <span class="sh-nav-dropdown-subtitle">Build an amazing website in just under an hour</span>
             <span class="sh-nav-dropdown-description">Take advantage of designs created just for your industry and then customize them to reflect your one-of-a-kind idea.</span>
-            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">We value your privacy</span>
-            <span class="sh-nav-dropdown-description">We hide your name, address, phone number and email from our WHOIS directory for free on applicable domains.</span>
-            <a href="" class="sh-nav-dropdown-morelink"><span>More reasons to choose SiteHeft Domains</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Responsive mobile design</span>
+            <span class="sh-nav-dropdown-description">More than half of the web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Website Builder</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
 }
