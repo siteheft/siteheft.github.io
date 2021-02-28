@@ -182,7 +182,7 @@ function navDomainsClick() {
             <a href="" class="sh-nav-dropdown-morelink"><span>More reasons to choose SiteHeft Domains</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
-}
+};
 
 function navWebsitesClick() {
     if(document.querySelector("#navWebsites").classList.contains("sh-nav-selected")) {
@@ -228,5 +228,52 @@ function navWebsitesClick() {
             <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Website Builder</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
-}
+};
 
+function navHostingClick() {
+    if(document.querySelector("#navHosting").classList.contains("sh-nav-selected")) {
+        if (window.scrollY < 65) {
+            document.querySelector(".sh-nav").style.backgroundColor = "";
+            document.querySelector(".sh-nav").style.boxShadow = "";
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
+        document.querySelector("#navHosting").classList.remove("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector("body").style.overflowY = "scroll";
+    } else {
+        if (document.querySelector(".sh-nav-selected")) {
+            document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        }
+        document.querySelector(".sh-nav").style.backgroundColor = "white";
+        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+        document.querySelector(".shLogo").style.fill = "#d14739";
+        document.querySelector(".navGrp1").style.color = "black";
+        document.querySelector(".navGrp2").style.color = "black";
+        document.querySelector("#navHosting").classList.add("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".sh-background").setAttribute("onclick", "navHostingClick()");
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Hosting</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Shared</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Virtual Private Server (VPS)</a></li>
+            <li><a href="">Dedicated Server</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why Choose SiteHeft Web Hosting?</span>
+            <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
+            <span class="sh-nav-dropdown-description">We partnered with the world's largest web hosting provider to bring your website the reliability and performance it deserves for a fraction of the price.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Responsive mobile design</span>
+            <span class="sh-nav-dropdown-description">More than half of the world's web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Website Builder</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
+    }
+};
