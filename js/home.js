@@ -147,7 +147,9 @@ function navDomainsClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "none";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
-        document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        if (document.querySelector(".sh-nav-selected")) {
+            document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        }
         document.querySelector(".sh-nav").style.backgroundColor = "white";
         document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
         document.querySelector(".shLogo").style.fill = "#d14739";
@@ -196,7 +198,9 @@ function navWebsitesClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "none";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
-        document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        if (document.querySelector(".sh-nav-selected")) {
+            document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        }
         document.querySelector(".sh-nav").style.backgroundColor = "white";
         document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
         document.querySelector(".shLogo").style.fill = "#d14739";
