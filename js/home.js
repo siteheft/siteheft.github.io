@@ -270,7 +270,7 @@ function navHostingClick() {
         <div class="sh-nav-dropdown-right">
             <span class="sh-nav-dropdown-title">Why Choose SiteHeft Web Hosting?</span>
             <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
-            <span class="sh-nav-dropdown-description">We partnered with the world's largest web hosting provider to bring your website the reliability and performance it deserves for a fraction of the price.</span>
+            <span class="sh-nav-dropdown-description">Your website deserves a good home. Give it the reliability and performance that it deserves.</span>
             <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Responsive mobile design</span>
             <span class="sh-nav-dropdown-description">More than half of the world's web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
             <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Website Builder</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
