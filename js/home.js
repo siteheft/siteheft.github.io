@@ -263,7 +263,7 @@ function navHostingClick() {
             <li><a href="">Shared</a></li>
             <li><a href="">WordPress</a></li>
             <li><a href="">Business</a></li>
-            <li><a href="">Virtual Private Server (VPS)</a></li>
+            <li><a href="">Virtual Private Server</a></li>
             <li><a href="">Dedicated Server</a></li>
         </ul>
         </div>
@@ -271,8 +271,8 @@ function navHostingClick() {
             <span class="sh-nav-dropdown-title">Why Choose SiteHeft Web Hosting?</span>
             <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
             <span class="sh-nav-dropdown-description">Your website deserves a good home. We partnered with the world's largest web host to bring your website reliability and performance.</span>
-            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Responsive mobile design</span>
-            <span class="sh-nav-dropdown-description">More than half of the world's web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
+            <span class="sh-nav-dropdown-description"></span>
             <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Web Hosting</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
