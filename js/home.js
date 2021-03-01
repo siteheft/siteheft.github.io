@@ -315,7 +315,7 @@ function navSecurityClick() {
         </ul>
         </div>
         <div class="sh-nav-dropdown-right">
-            <span class="sh-nav-dropdown-title">Why your website needs a SSL certificate?</span>
+            <span class="sh-nav-dropdown-title">Why your website needs an SSL certificate?</span>
             <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
             <span class="sh-nav-dropdown-description">Your website deserves a good home. That's why we partnered with the world's largest web host to bring your website reliability and performance.</span>
             <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
