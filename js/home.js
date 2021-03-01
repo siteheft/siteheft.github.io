@@ -277,3 +277,50 @@ function navHostingClick() {
         </div>`;
     }
 };
+
+function navSecurityClick() {
+    if(document.querySelector("#navSecurity").classList.contains("sh-nav-selected")) {
+        if (window.scrollY < 65) {
+            document.querySelector(".sh-nav").style.backgroundColor = "";
+            document.querySelector(".sh-nav").style.boxShadow = "";
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
+        document.querySelector("#navSecurity").classList.remove("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector("body").style.overflowY = "scroll";
+    } else {
+        if (document.querySelector(".sh-nav-selected")) {
+            document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        }
+        document.querySelector(".sh-nav").style.backgroundColor = "white";
+        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+        document.querySelector(".shLogo").style.fill = "#d14739";
+        document.querySelector(".navGrp1").style.color = "black";
+        document.querySelector(".navGrp2").style.color = "black";
+        document.querySelector("#navSecurity").classList.add("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".sh-background").setAttribute("onclick", "navSecurityClick()");
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Security</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Website Security</a></li>
+            <li><a href="">SSL</a></li>
+            <li><a href="">Managed SSL Service</a></li>
+            <li><a href="">Website Backup</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why your website needs a SSL certificate?</span>
+            <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
+            <span class="sh-nav-dropdown-description">Your website deserves a good home. That's why we partnered with the world's largest web host to bring your website reliability and performance.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
+            <span class="sh-nav-dropdown-description">Outgrew your current plan? No worries, just a few clicks and your website is ready to take on the world. </span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Web Hosting</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
+    }
+};
