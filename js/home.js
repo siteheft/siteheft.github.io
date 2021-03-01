@@ -317,9 +317,9 @@ function navSecurityClick() {
         <div class="sh-nav-dropdown-right">
             <span class="sh-nav-dropdown-title">Why your website needs an SSL certificate.</span>
             <span class="sh-nav-dropdown-subtitle">It protects your website from attacks</span>
-            <span class="sh-nav-dropdown-description">You wouldn't want attackers to get a hold of sensitive information. SSL encrypts data in transit so when attackers intercept, they would only see a jumbled mess.</span>
-            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
-            <span class="sh-nav-dropdown-description">Outgrew your current plan? No worries, just a few clicks and your website is ready to take on the world. </span>
+            <span class="sh-nav-dropdown-description">SSL encrypts data in transit so when bad guys intercept, they would only see a jumbled mess, protecting sensitive information.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
+            <span class="sh-nav-dropdown-description">Websites with SSL installed appears higher in search results, making it easy for visitors to find your website.</span>
             <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SSL</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
