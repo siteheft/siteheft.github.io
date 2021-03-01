@@ -263,7 +263,7 @@ function navHostingClick() {
             <li><a href="">Shared</a></li>
             <li><a href="">WordPress</a></li>
             <li><a href="">Business</a></li>
-            <li><a href="">Virtual Private Server</a></li>
+            <li><a href="">Virtual Private Server (VPS)</a></li>
             <li><a href="">Dedicated Server</a></li>
         </ul>
         </div>
@@ -316,6 +316,52 @@ function navSecurityClick() {
         </div>
         <div class="sh-nav-dropdown-right">
             <span class="sh-nav-dropdown-title">Why your website needs an SSL certificate.</span>
+            <span class="sh-nav-dropdown-subtitle">It protects your website from attacks</span>
+            <span class="sh-nav-dropdown-description">SSL encrypts data in transit so when bad guys intercept, they would only see a jumbled mess, protecting sensitive information.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
+            <span class="sh-nav-dropdown-description">Websites with SSL installed appears higher in search results, making it easy for visitors to find your website.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SSL</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
+    }
+};
+
+function navMarketingClick() {
+    if(document.querySelector("#navMarketing").classList.contains("sh-nav-selected")) {
+        if (window.scrollY < 65) {
+            document.querySelector(".sh-nav").style.backgroundColor = "";
+            document.querySelector(".sh-nav").style.boxShadow = "";
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
+        document.querySelector("#navMarketing").classList.remove("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector("body").style.overflowY = "scroll";
+    } else {
+        if (document.querySelector(".sh-nav-selected")) {
+            document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        }
+        document.querySelector(".sh-nav").style.backgroundColor = "white";
+        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+        document.querySelector(".shLogo").style.fill = "#d14739";
+        document.querySelector(".navGrp1").style.color = "black";
+        document.querySelector(".navGrp2").style.color = "black";
+        document.querySelector("#navMarketing").classList.add("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".sh-background").setAttribute("onclick", "navMarketingClick()");
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Marketing</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Email Marketing</a></li>
+            <li><a href="">Search Engine Optimisation (SEO)</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why your website needs an Search Engine Optimisation.</span>
             <span class="sh-nav-dropdown-subtitle">It protects your website from attacks</span>
             <span class="sh-nav-dropdown-description">SSL encrypts data in transit so when bad guys intercept, they would only see a jumbled mess, protecting sensitive information.</span>
             <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
