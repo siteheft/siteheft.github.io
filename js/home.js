@@ -370,3 +370,49 @@ function navMarketingClick() {
         </div>`;
     }
 };
+
+function navEmailClick() {
+    if(document.querySelector("#navEmail").classList.contains("sh-nav-selected")) {
+        if (window.scrollY < 65) {
+            document.querySelector(".sh-nav").style.backgroundColor = "";
+            document.querySelector(".sh-nav").style.boxShadow = "";
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
+        document.querySelector("#navEmail").classList.remove("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector("body").style.overflowY = "scroll";
+    } else {
+        if (document.querySelector(".sh-nav-selected")) {
+            document.querySelector(".sh-nav-selected").classList.remove("sh-nav-selected");
+        }
+        document.querySelector(".sh-nav").style.backgroundColor = "white";
+        document.querySelector(".sh-nav").style.boxShadow = "0 1px 6px 0 rgba(0,0,0,0.2)";
+        document.querySelector(".shLogo").style.fill = "#d14739";
+        document.querySelector(".navGrp1").style.color = "black";
+        document.querySelector(".navGrp2").style.color = "black";
+        document.querySelector("#navEmail").classList.add("sh-nav-selected");
+        document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector("body").style.overflowY = "hidden";
+        document.querySelector(".sh-background").setAttribute("onclick", "navMarketingClick()");
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Email</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Workspace Email</a></li>
+            <li><a href="">Workspace Online Storage</a></li>
+            <li><a href="">Workspace Calendar</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why you need a professional email address?</span>
+            <span class="sh-nav-dropdown-subtitle">It's simple, and easy to remember</span>
+            <span class="sh-nav-dropdown-description">Email addresses ending with your domain is often shorter and easy to remember as customers can easily associate you with your brand.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
+            <span class="sh-nav-dropdown-description">Clients are more likely to trust an email sent from an email address like jane@janesflower.com rather than janesflower@gmail.com.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
+    }
+};
