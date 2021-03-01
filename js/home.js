@@ -364,8 +364,8 @@ function navMarketingClick() {
             <span class="sh-nav-dropdown-title">Why SEO is important for your website.</span>
             <span class="sh-nav-dropdown-subtitle">Appear at the top of organic search results</span>
             <span class="sh-nav-dropdown-description">How often have you gone past the first page of search results? Being at the top means high visibility, leading to more clicks to your website.</span>
-            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
-            <span class="sh-nav-dropdown-description">Websites with SSL installed appears higher in search results, making it easy for visitors to find your website.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Enhances the trust and credibility of your brand</span>
+            <span class="sh-nav-dropdown-description">People are more likely to trust a top-ranking result to provide them with what they want to see and what they are looking for.</span>
             <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
