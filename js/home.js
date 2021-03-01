@@ -144,8 +144,7 @@ function navDomainsClick() {
         }
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.height = "0px";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -158,8 +157,7 @@ function navDomainsClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navDomains").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.height = "";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navDomainsClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -197,8 +195,7 @@ function navWebsitesClick() {
         }
         document.querySelector("#navWebsites").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.height = "0px";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -211,8 +208,7 @@ function navWebsitesClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navWebsites").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.height = "";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navWebsitesClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -245,8 +241,7 @@ function navHostingClick() {
         }
         document.querySelector("#navHosting").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.height = "0px";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -259,8 +254,7 @@ function navHostingClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navHosting").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.height = "";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navHostingClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -295,8 +289,7 @@ function navSecurityClick() {
         }
         document.querySelector("#navSecurity").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.height = "0px";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "none";
+        document.querySelector(".sh-nav-dropdown").style.display = "none";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -309,8 +302,7 @@ function navSecurityClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navSecurity").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.height = "";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navSecurityClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
