@@ -392,7 +392,7 @@ function navEmailClick() {
         }
         document.querySelector("#navEmail").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.overflow = "none";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "none !important";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
