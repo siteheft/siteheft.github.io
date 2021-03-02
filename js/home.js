@@ -336,15 +336,19 @@ function navSecurityClick() {
 function navMarketingClick() {
     if(document.querySelector("#navMarketing").classList.contains("sh-nav-selected")) {
         if (window.scrollY < 65) {
-            document.querySelector(".sh-nav").style.backgroundColor = "";
-            document.querySelector(".sh-nav").style.boxShadow = "";
-            document.querySelector(".shLogo").style.fill = "#ffffff";
-            document.querySelector(".navGrp1").style.color = "white";
-            document.querySelector(".navGrp2").style.color = "white";
+            setTimeout(() => {
+                document.querySelector(".sh-nav").style.backgroundColor = "";
+                document.querySelector(".sh-nav").style.boxShadow = "";
+                document.querySelector(".shLogo").style.fill = "#ffffff";
+                document.querySelector(".navGrp1").style.color = "white";
+                document.querySelector(".navGrp2").style.color = "white";
+            }, 300);
         }
         document.querySelector("#navMarketing").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -357,7 +361,9 @@ function navMarketingClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navMarketing").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navMarketingClick()");
         setTimeout(() => {
