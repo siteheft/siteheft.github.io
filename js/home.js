@@ -160,29 +160,27 @@ function navDomainsClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navDomainsClick()");
-        setTimeout(() => {
-            document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
-            <span class="sh-nav-dropdown-title">Domain Search</span>
-            <div class="sh-nav-dropdown-searchgrp">
-                <input class="sh-nav-dropdown-search" type="text" placeholder="Find your new domain"><button class="sh-nav-dropdown-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
-            </div>
-            <span class="sh-nav-dropdown-title">Other Domain Services</span>
-            <ul class="sh-nav-dropdown-navlinks">
-                <li><a href="">Bulk Registration</a></li>
-                <li><a href="">Domain Transfer</a></li>
-                <li><a href="">Bulk Transfer</a></li>
-                <li><a href="">Domain Backorder</a></li>
-            </ul>
-            </div>
-            <div class="sh-nav-dropdown-right">
-                <span class="sh-nav-dropdown-title">Why Choose SiteHeft Domains?</span>
-                <span class="sh-nav-dropdown-subtitle">Be spoilt for choice</span>
-                <span class="sh-nav-dropdown-description">Get .photos for your photography portfolio or .kitchen for your restaurant. Find your unique domain with over 500 domain extensions to choose from.</span>
-                <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">We value your privacy</span>
-                <span class="sh-nav-dropdown-description">We hide your name, address, phone number and email from our WHOIS directory for free on applicable domains.</span>
-                <a href="" class="sh-nav-dropdown-morelink"><span>More reasons to choose SiteHeft Domains</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>`;
-        }, 300);
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Domain Search</span>
+        <div class="sh-nav-dropdown-searchgrp">
+            <input class="sh-nav-dropdown-search" type="text" placeholder="Find your new domain"><button class="sh-nav-dropdown-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
+        </div>
+        <span class="sh-nav-dropdown-title">Other Domain Services</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Bulk Registration</a></li>
+            <li><a href="">Domain Transfer</a></li>
+            <li><a href="">Bulk Transfer</a></li>
+            <li><a href="">Domain Backorder</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why Choose SiteHeft Domains?</span>
+            <span class="sh-nav-dropdown-subtitle">Be spoilt for choice</span>
+            <span class="sh-nav-dropdown-description">Get .photos for your photography portfolio or .kitchen for your restaurant. Find your unique domain with over 500 domain extensions to choose from.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">We value your privacy</span>
+            <span class="sh-nav-dropdown-description">We hide your name, address, phone number and email from our WHOIS directory for free on applicable domains.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>More reasons to choose SiteHeft Domains</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 };
 
@@ -213,24 +211,22 @@ function navWebsitesClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navWebsitesClick()");
-        setTimeout(() => {
-            document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
-            <span class="sh-nav-dropdown-title">Websites</span>
-            <ul class="sh-nav-dropdown-navlinks">
-                <li><a href="">Website Builder</a></li>
-                <li><a href="">WordPress</a></li>
-                <li><a href="">Shopping Cart</a></li>
-            </ul>
-            </div>
-            <div class="sh-nav-dropdown-right">
-                <span class="sh-nav-dropdown-title">Why Use SiteHeft Website Builder?</span>
-                <span class="sh-nav-dropdown-subtitle">Build an amazing website in just under an hour</span>
-                <span class="sh-nav-dropdown-description">Take advantage of designs created just for your industry and then customize them to reflect your one-of-a-kind idea.</span>
-                <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Responsive mobile design</span>
-                <span class="sh-nav-dropdown-description">More than half of the world's web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
-                <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Website Builder</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>`;
-        }, 300);
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Websites</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Website Builder</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why Use SiteHeft Website Builder?</span>
+            <span class="sh-nav-dropdown-subtitle">Build an amazing website in just under an hour</span>
+            <span class="sh-nav-dropdown-description">Take advantage of designs created just for your industry and then customize them to reflect your one-of-a-kind idea.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Responsive mobile design</span>
+            <span class="sh-nav-dropdown-description">More than half of the world's web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Website Builder</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 };
 
@@ -261,26 +257,24 @@ function navHostingClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navHostingClick()");
-        setTimeout(() => {
-            document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
-            <span class="sh-nav-dropdown-title">Hosting</span>
-            <ul class="sh-nav-dropdown-navlinks">
-                <li><a href="">Shared</a></li>
-                <li><a href="">WordPress</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">Virtual Private Server (VPS)</a></li>
-                <li><a href="">Dedicated Server</a></li>
-            </ul>
-            </div>
-            <div class="sh-nav-dropdown-right">
-                <span class="sh-nav-dropdown-title">Why Choose SiteHeft Web Hosting?</span>
-                <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
-                <span class="sh-nav-dropdown-description">Your website deserves a good home. That's why we partnered with the world's largest web host to bring your website reliability and performance.</span>
-                <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
-                <span class="sh-nav-dropdown-description">Outgrew your current plan? No worries, just a few clicks and your website is ready to take on the world. </span>
-                <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Web Hosting</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>`;
-        }, 300);
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Hosting</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Shared</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Virtual Private Server (VPS)</a></li>
+            <li><a href="">Dedicated Server</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why Choose SiteHeft Web Hosting?</span>
+            <span class="sh-nav-dropdown-subtitle">Powered by the world's largest web hosting provider</span>
+            <span class="sh-nav-dropdown-description">Your website deserves a good home. That's why we partnered with the world's largest web host to bring your website reliability and performance.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Plans that grow with you</span>
+            <span class="sh-nav-dropdown-description">Outgrew your current plan? No worries, just a few clicks and your website is ready to take on the world. </span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SiteHeft Web Hosting</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 };
 
@@ -311,25 +305,23 @@ function navSecurityClick() {
         document.querySelector(".sh-nav-dropdown").style.display = "flex";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navSecurityClick()");
-        setTimeout(() => {
-            document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
-            <span class="sh-nav-dropdown-title">Security</span>
-            <ul class="sh-nav-dropdown-navlinks">
-                <li><a href="">Website Security</a></li>
-                <li><a href="">SSL</a></li>
-                <li><a href="">Managed SSL Service</a></li>
-                <li><a href="">Website Backup</a></li>
-            </ul>
-            </div>
-            <div class="sh-nav-dropdown-right">
-                <span class="sh-nav-dropdown-title">Why your website needs an SSL certificate.</span>
-                <span class="sh-nav-dropdown-subtitle">It protects your website from attacks</span>
-                <span class="sh-nav-dropdown-description">SSL encrypts data in transit so when bad guys intercept, they would only see a jumbled mess, protecting sensitive information.</span>
-                <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
-                <span class="sh-nav-dropdown-description">Websites with SSL installed appears higher in search results, making it easy for visitors to find your website.</span>
-                <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SSL</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>`;
-        }, 300);
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Security</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Website Security</a></li>
+            <li><a href="">SSL</a></li>
+            <li><a href="">Managed SSL Service</a></li>
+            <li><a href="">Website Backup</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why your website needs an SSL certificate.</span>
+            <span class="sh-nav-dropdown-subtitle">It protects your website from attacks</span>
+            <span class="sh-nav-dropdown-description">SSL encrypts data in transit so when bad guys intercept, they would only see a jumbled mess, protecting sensitive information.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
+            <span class="sh-nav-dropdown-description">Websites with SSL installed appears higher in search results, making it easy for visitors to find your website.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SSL</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 };
 
@@ -366,24 +358,22 @@ function navMarketingClick() {
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navMarketingClick()");
-        setTimeout(() => {
-            document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
-            <span class="sh-nav-dropdown-title">Marketing</span>
-            <ul class="sh-nav-dropdown-navlinks">
-                <li><a href="">Email Marketing</a></li>
-                <li><a href="">Search Engine Optimisation (SEO)</a></li>
-                <li><a href="">Shopping Cart</a></li>
-            </ul>
-            </div>
-            <div class="sh-nav-dropdown-right">
-                <span class="sh-nav-dropdown-title">Why SEO is important for your website.</span>
-                <span class="sh-nav-dropdown-subtitle">Appear at the top of organic search results</span>
-                <span class="sh-nav-dropdown-description">How often have you gone past the first page of search results? Being at the top means high visibility, leading to more clicks to your website.</span>
-                <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Enhances the trust and credibility of your brand</span>
-                <span class="sh-nav-dropdown-description">People are more likely to trust a top-ranking result to provide them with what they want to see and what they are looking for.</span>
-                <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>`;
-        }, 300);
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Marketing</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Email Marketing</a></li>
+            <li><a href="">Search Engine Optimisation (SEO)</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why SEO is important for your website.</span>
+            <span class="sh-nav-dropdown-subtitle">Appear at the top of organic search results</span>
+            <span class="sh-nav-dropdown-description">How often have you gone past the first page of search results? Being at the top means high visibility, leading to more clicks to your website.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Enhances the trust and credibility of your brand</span>
+            <span class="sh-nav-dropdown-description">People are more likely to trust a top-ranking result to provide them with what they want to see and what they are looking for.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 };
 
@@ -420,23 +410,21 @@ function navEmailClick() {
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navMarketingClick()");
-        setTimeout(() => {
-            document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
-            <span class="sh-nav-dropdown-title">Email</span>
-            <ul class="sh-nav-dropdown-navlinks">
-                <li><a href="">Workspace Email</a></li>
-                <li><a href="">Workspace Online Storage</a></li>
-                <li><a href="">Workspace Calendar</a></li>
-            </ul>
-            </div>
-            <div class="sh-nav-dropdown-right">
-                <span class="sh-nav-dropdown-title">Why you need a professional email address?</span>
-                <span class="sh-nav-dropdown-subtitle">It's simple, and easy to remember</span>
-                <span class="sh-nav-dropdown-description">Email addresses ending with your domain are often shorter and easy to remember as customers can easily associate you with your brand.</span>
-                <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
-                <span class="sh-nav-dropdown-description">Clients are more likely to trust an email sent from an email address like jane@janesflower.com rather than janesflower@gmail.com.</span>
-                <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-            </div>`;
-        }, 300);
+        document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
+        <span class="sh-nav-dropdown-title">Email</span>
+        <ul class="sh-nav-dropdown-navlinks">
+            <li><a href="">Workspace Email</a></li>
+            <li><a href="">Workspace Online Storage</a></li>
+            <li><a href="">Workspace Calendar</a></li>
+        </ul>
+        </div>
+        <div class="sh-nav-dropdown-right">
+            <span class="sh-nav-dropdown-title">Why you need a professional email address?</span>
+            <span class="sh-nav-dropdown-subtitle">It's simple, and easy to remember</span>
+            <span class="sh-nav-dropdown-description">Email addresses ending with your domain are often shorter and easy to remember as customers can easily associate you with your brand.</span>
+            <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
+            <span class="sh-nav-dropdown-description">Clients are more likely to trust an email sent from an email address like jane@janesflower.com rather than janesflower@gmail.com.</span>
+            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>`;
     }
 };
