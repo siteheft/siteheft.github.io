@@ -136,15 +136,18 @@ $.ajax({
 function navDomainsClick() {
     if(document.querySelector("#navDomains").classList.contains("sh-nav-selected")) {
         if (window.scrollY < 65) {
-            document.querySelector(".sh-nav").style.backgroundColor = "";
-            document.querySelector(".sh-nav").style.boxShadow = "";
-            document.querySelector(".shLogo").style.fill = "#ffffff";
-            document.querySelector(".navGrp1").style.color = "white";
-            document.querySelector(".navGrp2").style.color = "white";
+            setTimeout(() => {
+                document.querySelector(".sh-nav").style.backgroundColor = "";
+                document.querySelector(".sh-nav").style.boxShadow = "";
+                document.querySelector(".shLogo").style.fill = "#ffffff";
+                document.querySelector(".navGrp1").style.color = "white";
+                document.querySelector(".navGrp2").style.color = "white";
+            }, 300);
         }
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -157,7 +160,8 @@ function navDomainsClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navDomains").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navDomainsClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -187,15 +191,18 @@ function navDomainsClick() {
 function navWebsitesClick() {
     if(document.querySelector("#navWebsites").classList.contains("sh-nav-selected")) {
         if (window.scrollY < 65) {
-            document.querySelector(".sh-nav").style.backgroundColor = "";
-            document.querySelector(".sh-nav").style.boxShadow = "";
-            document.querySelector(".shLogo").style.fill = "#ffffff";
-            document.querySelector(".navGrp1").style.color = "white";
-            document.querySelector(".navGrp2").style.color = "white";
+            setTimeout(() => {
+                document.querySelector(".sh-nav").style.backgroundColor = "";
+                document.querySelector(".sh-nav").style.boxShadow = "";
+                document.querySelector(".shLogo").style.fill = "#ffffff";
+                document.querySelector(".navGrp1").style.color = "white";
+                document.querySelector(".navGrp2").style.color = "white";
+            }, 300);
         }
         document.querySelector("#navWebsites").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -208,7 +215,8 @@ function navWebsitesClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navWebsites").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navWebsitesClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -233,15 +241,18 @@ function navWebsitesClick() {
 function navHostingClick() {
     if(document.querySelector("#navHosting").classList.contains("sh-nav-selected")) {
         if (window.scrollY < 65) {
-            document.querySelector(".sh-nav").style.backgroundColor = "";
-            document.querySelector(".sh-nav").style.boxShadow = "";
-            document.querySelector(".shLogo").style.fill = "#ffffff";
-            document.querySelector(".navGrp1").style.color = "white";
-            document.querySelector(".navGrp2").style.color = "white";
+            setTimeout(() => {
+                document.querySelector(".sh-nav").style.backgroundColor = "";
+                document.querySelector(".sh-nav").style.boxShadow = "";
+                document.querySelector(".shLogo").style.fill = "#ffffff";
+                document.querySelector(".navGrp1").style.color = "white";
+                document.querySelector(".navGrp2").style.color = "white";
+            }, 300);
         }
         document.querySelector("#navHosting").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -254,7 +265,8 @@ function navHostingClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navHosting").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navHostingClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -281,15 +293,18 @@ function navHostingClick() {
 function navSecurityClick() {
     if(document.querySelector("#navSecurity").classList.contains("sh-nav-selected")) {
         if (window.scrollY < 65) {
-            document.querySelector(".sh-nav").style.backgroundColor = "";
-            document.querySelector(".sh-nav").style.boxShadow = "";
-            document.querySelector(".shLogo").style.fill = "#ffffff";
-            document.querySelector(".navGrp1").style.color = "white";
-            document.querySelector(".navGrp2").style.color = "white";
+            setTimeout(() => {
+                document.querySelector(".sh-nav").style.backgroundColor = "";
+                document.querySelector(".sh-nav").style.boxShadow = "";
+                document.querySelector(".shLogo").style.fill = "#ffffff";
+                document.querySelector(".navGrp1").style.color = "white";
+                document.querySelector(".navGrp2").style.color = "white";
+            }, 300);
         }
         document.querySelector("#navSecurity").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -302,7 +317,8 @@ function navSecurityClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navSecurity").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navSecurityClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
@@ -338,7 +354,6 @@ function navMarketingClick() {
         }
         document.querySelector("#navMarketing").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -353,7 +368,6 @@ function navMarketingClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navMarketing").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
@@ -390,7 +404,6 @@ function navEmailClick() {
         }
         document.querySelector("#navEmail").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -405,7 +418,6 @@ function navEmailClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navEmail").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
