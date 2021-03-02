@@ -392,7 +392,8 @@ function navEmailClick() {
         }
         document.querySelector("#navEmail").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
-        document.querySelector(".sh-nav-dropdown").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "none";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
     } else {
         if (document.querySelector(".sh-nav-selected")) {
@@ -405,7 +406,8 @@ function navEmailClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navEmail").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
-        document.querySelector(".sh-nav-dropdown").style.display = "flex";
+        document.querySelector(".sh-nav-dropdown").style.overflow = "";
+        document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
         document.querySelector(".sh-background").setAttribute("onclick", "navMarketingClick()");
         setTimeout(() => {
