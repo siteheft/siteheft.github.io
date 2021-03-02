@@ -384,11 +384,13 @@ function navMarketingClick() {
 function navEmailClick() {
     if(document.querySelector("#navEmail").classList.contains("sh-nav-selected")) {
         if (window.scrollY < 65) {
-            document.querySelector(".sh-nav").style.backgroundColor = "";
-            document.querySelector(".sh-nav").style.boxShadow = "";
-            document.querySelector(".shLogo").style.fill = "#ffffff";
-            document.querySelector(".navGrp1").style.color = "white";
-            document.querySelector(".navGrp2").style.color = "white";
+            setTimeout(() => {
+                document.querySelector(".sh-nav").style.backgroundColor = "";
+                document.querySelector(".sh-nav").style.boxShadow = "";
+                document.querySelector(".shLogo").style.fill = "#ffffff";
+                document.querySelector(".navGrp1").style.color = "white";
+                document.querySelector(".navGrp2").style.color = "white";
+            }, 300);
         }
         document.querySelector("#navEmail").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
