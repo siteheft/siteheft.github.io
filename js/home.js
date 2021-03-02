@@ -146,6 +146,7 @@ function navDomainsClick() {
         }
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -160,6 +161,7 @@ function navDomainsClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navDomains").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
@@ -201,6 +203,7 @@ function navWebsitesClick() {
         }
         document.querySelector("#navWebsites").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -215,6 +218,7 @@ function navWebsitesClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navWebsites").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
@@ -251,6 +255,7 @@ function navHostingClick() {
         }
         document.querySelector("#navHosting").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -265,6 +270,7 @@ function navHostingClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navHosting").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
@@ -303,6 +309,7 @@ function navSecurityClick() {
         }
         document.querySelector("#navSecurity").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -317,6 +324,7 @@ function navSecurityClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navSecurity").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
@@ -354,6 +362,7 @@ function navMarketingClick() {
         }
         document.querySelector("#navMarketing").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -368,6 +377,7 @@ function navMarketingClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navMarketing").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
@@ -404,6 +414,7 @@ function navEmailClick() {
         }
         document.querySelector("#navEmail").classList.remove("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "none";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-out";
         document.querySelector(".sh-nav-dropdown").style.overflow = "hidden";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "0";
         document.querySelector("body").style.overflowY = "scroll";
@@ -418,6 +429,7 @@ function navEmailClick() {
         document.querySelector(".navGrp2").style.color = "black";
         document.querySelector("#navEmail").classList.add("sh-nav-selected");
         document.querySelector(".sh-background").style.display = "block";
+        document.querySelector(".sh-nav-dropdown").style.transition = "0.3s ease-in";
         document.querySelector(".sh-nav-dropdown").style.overflow = "";
         document.querySelector(".sh-nav-dropdown").style.maxHeight = "100%";
         document.querySelector("body").style.overflowY = "hidden";
