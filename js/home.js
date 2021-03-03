@@ -465,6 +465,7 @@ function navSlideLeftOpen() {
 
 function navSlideLeftClose() {
     document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-out";
+    document.querySelector(".sh-nav-slideright").style.transition = "";
     document.querySelector(".sh-nav-slideleft").style.overflow = "hidden";
     document.querySelector(".sh-nav-slideleft-close").style.display = "none";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "0";
