@@ -514,3 +514,28 @@ function navDomainsMobileClick() {
         document.querySelector(".sh-nav-slideright-back").style.display = "block";
     }, 300);
 }
+
+function navWebsitesMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
+    document.querySelector(".sh-nav-slideright-inner").innerHTML = `
+        <span class="sh-nav-slideright-title">Websites</span>
+        <ul class="sh-nav-slideright-navlinks">
+            <li><a href="">Website Builder</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+        <div class="sh-nav-slideright-info">
+            <span class="sh-nav-slideright-title">Why Use SiteHeft Website Builder?</span>
+            <span class="sh-nav-slideright-subtitle">Build an amazing website in just under an hour</span>
+            <span class="sh-nav-slideright-description">Take advantage of designs created just for your industry and then customize them to reflect your one-of-a-kind idea.</span>
+            <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Responsive mobile design</span>
+            <span class="sh-nav-slideright-description">More than half of the world's web traffic comes from mobile. Give your mobile visitors a great experience with our website builder.</span>
+            <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SiteHeft Website Builder</span></a>
+        </div>
+        `;
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideright-back").style.display = "block";
+    }, 300);
+}
