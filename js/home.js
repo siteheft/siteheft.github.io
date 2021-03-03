@@ -3,9 +3,6 @@
 var heroVid = document.querySelector("#sh-hero-vid");
 $(document).ready(() => {
     var heroVidPlay = heroVid.play();
-    heroVidPlay.then(() => {
-        alert("vid is playing");
-    })
     heroVid.onplaying = startHeroTextChange();
 });
 
