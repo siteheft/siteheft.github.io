@@ -474,10 +474,7 @@ function navSlideLeftClose() {
 function navDomainsMobileClick() {
     document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
     document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
-    setTimeout(() => {
-        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
-        document.querySelector(".sh-nav-slideright-back").style.display = "block";
-        document.querySelector(".sh-nav-slideright-inner").innerHTML = `
+    document.querySelector(".sh-nav-slideright-inner").innerHTML = `
         <span class="sh-nav-slideright-title">Domain Search</span>
         <div class="sh-nav-slideright-searchgrp">
             <input class="sh-nav-slideright-search" type="text" placeholder="Find your new domain"><button class="sh-nav-slideright-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
@@ -498,5 +495,8 @@ function navDomainsMobileClick() {
             <a href="" class="sh-nav-slideright-morelink"><span>More reasons to choose SiteHeft Domains</span></a>
         </div>
         `;
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideright-back").style.display = "block";
     }, 300);
 }
