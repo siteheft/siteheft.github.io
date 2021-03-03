@@ -455,11 +455,15 @@ function navEmailClick() {
 
 function navSlideLeftOpen() {
     document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-in";
-    document.querySelector(".sh-nav-slideleft").style.overflow = "visible";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "100%";
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideleft").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideleft-close").style.display = "block";
+    }, 300);
 };
 function navSlideLeftClose() {
     document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-out";
     document.querySelector(".sh-nav-slideleft").style.overflow = "hidden";
+    document.querySelector(".sh-nav-slideleft-close").style.display = "none";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "0";
 };
