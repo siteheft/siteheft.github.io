@@ -468,8 +468,18 @@ function navSlideLeftClose() {
     document.querySelector(".sh-nav-slideleft").style.overflow = "hidden";
     document.querySelector(".sh-nav-slideleft-close").style.display = "none";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "0";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "0";
+    document.querySelector(".sh-nav-slideright").style.overflow = "hidden";
+    document.querySelector(".sh-nav-slideright-back").style.display = "none";
     document.querySelector("body").style.overflowY = "scroll";
 };
+
+function navSlideRightBack() {
+    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-out";
+    document.querySelector(".sh-nav-slideright").style.overflow = "hidden";
+    document.querySelector(".sh-nav-slideright-back").style.display = "none";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "0";
+}
 
 function navDomainsMobileClick() {
     document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
