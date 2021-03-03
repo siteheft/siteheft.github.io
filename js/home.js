@@ -486,6 +486,8 @@ function navSlideRightBack(type) {
 }
 
 function navDomainsMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.left = "";
+    document.querySelector(".sh-nav-slideright").style.right = "0px";
     document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
     document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
     document.querySelector(".sh-nav-slideright-inner").innerHTML = `
@@ -516,6 +518,8 @@ function navDomainsMobileClick() {
 }
 
 function navWebsitesMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.left = "";
+    document.querySelector(".sh-nav-slideright").style.right = "0px";
     document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
     document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
     document.querySelector(".sh-nav-slideright-inner").innerHTML = `
