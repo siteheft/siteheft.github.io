@@ -465,14 +465,18 @@ function navSlideLeftOpen() {
 
 function navSlideLeftClose() {
     document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-out";
-    navSlideRightBack();
+    navSlideRightBack("b");
     document.querySelector(".sh-nav-slideleft").style.overflow = "hidden";
     document.querySelector(".sh-nav-slideleft-close").style.display = "none";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "0";
     document.querySelector("body").style.overflowY = "scroll";
 };
 
-function navSlideRightBack() {
+function navSlideRightBack(type) {
+    if (type == "b") {
+        document.querySelector(".sh-nav-slideright").style.right = "";
+        document.querySelector(".sh-nav-slideright").style.left = "0px";
+    }
     document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-out";
     document.querySelector(".sh-nav-slideright-back").style.display = "none";
     document.querySelector(".sh-nav-slideright").style.maxWidth = "0";
