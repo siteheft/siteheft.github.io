@@ -456,14 +456,47 @@ function navEmailClick() {
 function navSlideLeftOpen() {
     document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-in";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "100%";
+    document.querySelector("body").style.overflowY = "hidden";
     setTimeout(() => {
         document.querySelector(".sh-nav-slideleft").style.overflow = "visible";
         document.querySelector(".sh-nav-slideleft-close").style.display = "block";
     }, 300);
 };
+
 function navSlideLeftClose() {
     document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-out";
     document.querySelector(".sh-nav-slideleft").style.overflow = "hidden";
     document.querySelector(".sh-nav-slideleft-close").style.display = "none";
     document.querySelector(".sh-nav-slideleft").style.maxWidth = "0";
+    document.querySelector("body").style.overflowY = "scroll";
 };
+
+function navDomainsMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideright-back").style.display = "block";
+        document.querySelector(".sh-nav-slideright-inner").innerHTML = `
+        <span class="sh-nav-slideright-title">Domain Search</span>
+        <div class="sh-nav-slideright-searchgrp">
+            <input class="sh-nav-slideright-search" type="text" placeholder="Find your new domain"><button class="sh-nav-slideright-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
+        </div>
+        <span class="sh-nav-slideright-title">Other Domain Services</span>
+        <ul class="sh-nav-slideright-navlinks">
+            <li><a href="">Bulk Registration</a></li>
+            <li><a href="">Domain Transfer</a></li>
+            <li><a href="">Bulk Transfer</a></li>
+            <li><a href="">Domain Backorder</a></li>
+        </ul>
+        <div class="sh-nav-slideright-info">
+            <span class="sh-nav-slideright-title">Why Choose SiteHeft Domains?</span>
+            <span class="sh-nav-slideright-subtitle">Be spoilt for choice</span>
+            <span class="sh-nav-slideright-description">Get .photos for your photography portfolio or .kitchen for your restaurant. Find your unique domain with over 500 domain extensions to choose from.</span>
+            <span class="sh-nav-slideright-subtitle" style="margin-top:20px">We value your privacy</span>
+            <span class="sh-nav-slideright-description">We hide your name, address, phone number and email from our WHOIS directory for free on applicable domains.</span>
+            <a href="" class="sh-nav-slideright-morelink"><span>More reasons to choose SiteHeft Domains</span></a>
+        </div>
+        `;
+    }, 300);
+}
