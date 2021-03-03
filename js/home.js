@@ -477,9 +477,11 @@ function navSlideLeftClose() {
 
 function navSlideRightBack() {
     document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-out";
-    document.querySelector(".sh-nav-slideright").style.overflow = "hidden";
     document.querySelector(".sh-nav-slideright-back").style.display = "none";
     document.querySelector(".sh-nav-slideright").style.maxWidth = "0";
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "hidden";
+    }, 300)
 }
 
 function navDomainsMobileClick() {
