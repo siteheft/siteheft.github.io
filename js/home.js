@@ -452,3 +452,14 @@ function navEmailClick() {
         </div>`;
     }
 };
+
+function navSlideLeftOpen() {
+    document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-in";
+    document.querySelector(".sh-nav-slideleft").style.overflow = "visible";
+    document.querySelector(".sh-nav-slideleft").style.maxWidth = "100%";
+};
+function navSlideLeftClose() {
+    document.querySelector(".sh-nav-slideleft").style.transition = "0.3s ease-out";
+    document.querySelector(".sh-nav-slideleft").style.overflow = "hidden";
+    document.querySelector(".sh-nav-slideleft").style.maxWidth = "0";
+};
