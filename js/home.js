@@ -448,7 +448,7 @@ function navEmailClick() {
             <span class="sh-nav-dropdown-description">Email addresses ending with your domain are often shorter and easy to remember as customers can easily associate you with your brand.</span>
             <span class="sh-nav-dropdown-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
             <span class="sh-nav-dropdown-description">Clients are more likely to trust an email sent from an email address like jane@janesflower.com rather than janesflower@gmail.com.</span>
-            <a href="" class="sh-nav-dropdown-morelink"><span>Learn more about SEO</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+            <a href="" class="sh-nav-dropdown-morelink"><span>See Email Plans</span>&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>`;
     }
 };
@@ -646,7 +646,7 @@ function navEmailMobileClick() {
             <span class="sh-nav-slideright-description">Email addresses ending with your domain are often shorter and easy to remember as customers can easily associate you with your brand.</span>
             <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
             <span class="sh-nav-slideright-description">Clients are more likely to trust an email sent from an email address like jane@janesflower.com rather than janesflower@gmail.com.</span>
-            <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SEO</span></a>
+            <a href="" class="sh-nav-slideright-morelink"><span>See Email Plans</span></a>
         </div>
         `;
     setTimeout(() => {
