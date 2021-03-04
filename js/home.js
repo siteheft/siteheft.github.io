@@ -543,3 +543,60 @@ function navWebsitesMobileClick() {
         document.querySelector(".sh-nav-slideright-back").style.display = "block";
     }, 300);
 }
+
+function navHostingMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.left = "";
+    document.querySelector(".sh-nav-slideright").style.right = "0px";
+    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
+    document.querySelector(".sh-nav-slideright-inner").innerHTML = `
+        <span class="sh-nav-slideright-title">Hosting</span>
+        <ul class="sh-nav-slideright-navlinks">
+            <li><a href=""Shared</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Virtual Private Server (VPS)</a></li>
+            <li><a href="">Dedicated Server</a></li>
+        </ul>
+        <div class="sh-nav-slideright-info">
+            <span class="sh-nav-slideright-title">Why Choose SiteHeft Web Hosting?</span>
+            <span class="sh-nav-slideright-subtitle">Powered by the world's largest web hosting provider</span>
+            <span class="sh-nav-slideright-description">Your website deserves a good home. That's why we partnered with the world's largest web host to bring your website reliability and performance.</span>
+            <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Plans that grow with you</span>
+            <span class="sh-nav-slideright-description">Outgrew your current plan? No worries, just a few clicks and your website is ready to take on the world.</span>
+            <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SiteHeft Web Hosting</span></a>
+        </div>
+        `;
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideright-back").style.display = "block";
+    }, 300);
+}
+
+function navSecurityMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.left = "";
+    document.querySelector(".sh-nav-slideright").style.right = "0px";
+    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
+    document.querySelector(".sh-nav-slideright-inner").innerHTML = `
+        <span class="sh-nav-slideright-title">Security</span>
+        <ul class="sh-nav-slideright-navlinks">
+            <li><a href=""Website Security</a></li>
+            <li><a href="">SSL</a></li>
+            <li><a href="">Managed SSL Service</a></li>
+            <li><a href="">Website Backup</a></li>
+        </ul>
+        <div class="sh-nav-slideright-info">
+            <span class="sh-nav-slideright-title">Why your website needs an SSL certificate.</span>
+            <span class="sh-nav-slideright-subtitle">It protects your website from attacks</span>
+            <span class="sh-nav-slideright-description">SSL encrypts data in transit so when bad guys intercept, they would only see a jumbled mess, protecting sensitive information.</span>
+            <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Helps with your search engine rankings</span>
+            <span class="sh-nav-slideright-description">Websites with SSL installed appears higher in search results, making it easy for visitors to find your website.</span>
+            <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SSL</span></a>
+        </div>
+        `;
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideright-back").style.display = "block";
+    }, 300);
+}
