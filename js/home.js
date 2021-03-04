@@ -641,7 +641,7 @@ function navEmailMobileClick() {
             <li><a href="">Workspace Calendar</a></li>
         </ul>
         <div class="sh-nav-slideright-info">
-            <span class="sh-nav-slideright-title"Why you need a professional email address?</span>
+            <span class="sh-nav-slideright-title">Why you need a professional email address?</span>
             <span class="sh-nav-slideright-subtitle">It's simple, and easy to remember</span>
             <span class="sh-nav-slideright-description">Email addresses ending with your domain are often shorter and easy to remember as customers can easily associate you with your brand.</span>
             <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
