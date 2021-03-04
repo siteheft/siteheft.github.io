@@ -601,6 +601,33 @@ function navSecurityMobileClick() {
     }, 300);
 }
 
+function navMarketingMobileClick() {
+    document.querySelector(".sh-nav-slideright").style.left = "";
+    document.querySelector(".sh-nav-slideright").style.right = "0px";
+    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
+    document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
+    document.querySelector(".sh-nav-slideright-inner").innerHTML = `
+        <span class="sh-nav-slideright-title">Marketing</span>
+        <ul class="sh-nav-slideright-navlinks">
+            <li><a href="">Email Marketing</a></li>
+            <li><a href="">Search Engine Optimisation (SEO)</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+        <div class="sh-nav-slideright-info">
+            <span class="sh-nav-slideright-title">Why SEO is important for your website.</span>
+            <span class="sh-nav-slideright-subtitle">Appear at the top of organic search results</span>
+            <span class="sh-nav-slideright-description">How often have you gone past the first page of search results? Being at the top means high visibility, leading to more clicks to your website.</span>
+            <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Enhances the trust and credibility of your brand</span>
+            <span class="sh-nav-slideright-description">People are more likely to trust a top-ranking result to provide them with what they want to see and what they are looking for.</span>
+            <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SEO</span></a>
+        </div>
+        `;
+    setTimeout(() => {
+        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
+        document.querySelector(".sh-nav-slideright-back").style.display = "block";
+    }, 300);
+}
+
 function navEmailMobileClick() {
     document.querySelector(".sh-nav-slideright").style.left = "";
     document.querySelector(".sh-nav-slideright").style.right = "0px";
@@ -619,33 +646,6 @@ function navEmailMobileClick() {
             <span class="sh-nav-slideright-description">Email addresses ending with your domain are often shorter and easy to remember as customers can easily associate you with your brand.</span>
             <span class="sh-nav-slideright-subtitle" style="margin-top:20px">Promotes both your brand and your credibility</span>
             <span class="sh-nav-slideright-description">Clients are more likely to trust an email sent from an email address like jane@janesflower.com rather than janesflower@gmail.com.</span>
-            <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SEO</span></a>
-        </div>
-        `;
-    setTimeout(() => {
-        document.querySelector(".sh-nav-slideright").style.overflow = "visible";
-        document.querySelector(".sh-nav-slideright-back").style.display = "block";
-    }, 300);
-}
-
-function navMarketingMobileClick() {
-    document.querySelector(".sh-nav-slideright").style.left = "";
-    document.querySelector(".sh-nav-slideright").style.right = "0px";
-    document.querySelector(".sh-nav-slideright").style.transition = "0.3s ease-in";
-    document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
-    document.querySelector(".sh-nav-slideright-inner").innerHTML = `
-        <span class="sh-nav-slideright-title">Marketing</span>
-        <ul class="sh-nav-slideright-navlinks">
-            <li><a href="">Email Marketing</a></li>
-            <li><a href="">Search Engine Optimisation (SEO)</a></li>
-            <li><a href="">Shopping Cart</a></li>
-        </ul>
-        <div class="sh-nav-slideright-info">
-            <span class="sh-nav-slideright-title">Why SEO is important for your website.</span>
-            <span class="sh-nav-slideright-subtitle">Appear at the top of organic search results</span>
-            <span class="sh-nav-slideright-description">How often have you gone past the first page of search results? Being at the top means high visibility, leading to more clicks to your website.</span>
-            <span class="sh-nav-slideright-subtitle" style="margin-top:20px"Enhances the trust and credibility of your brand</span>
-            <span class="sh-nav-slideright-description">People are more likely to trust a top-ranking result to provide them with what they want to see and what they are looking for.</span>
             <a href="" class="sh-nav-slideright-morelink"><span>Learn more about SEO</span></a>
         </div>
         `;
