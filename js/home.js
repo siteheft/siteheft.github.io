@@ -168,9 +168,9 @@ function navDomainsClick() {
         document.querySelector(".sh-background").setAttribute("onclick", "navDomainsClick()");
         document.querySelector(".sh-nav-dropdown").innerHTML = `<div class="sh-nav-dropdown-left">
         <span class="sh-nav-dropdown-title">Domain Search</span>
-        <div class="sh-nav-dropdown-searchgrp">
-            <input class="sh-nav-dropdown-search" type="text" placeholder="Find your new domain"><button class="sh-nav-dropdown-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
-        </div>
+        <form action="https://www.secureserver.net/products/domain-registration/find" class="sh-nav-dropdown-searchgrp">
+            <input class="sh-nav-dropdown-search" name="domainToCheck" type="text" placeholder="Find your new domain"><input type="hidden" name="plid" value="575739"><button class="sh-nav-dropdown-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
+        </form>
         <span class="sh-nav-dropdown-title">Other Domain Services</span>
         <ul class="sh-nav-dropdown-navlinks">
             <li><a href="">Bulk Registration</a></li>
@@ -492,9 +492,9 @@ function navDomainsMobileClick() {
     document.querySelector(".sh-nav-slideright").style.maxWidth = "100%";
     document.querySelector(".sh-nav-slideright-inner").innerHTML = `
         <span class="sh-nav-slideright-title">Domain Search</span>
-        <div class="sh-nav-slideright-searchgrp">
-            <input class="sh-nav-slideright-search" type="text" placeholder="Find your new domain"><button class="sh-nav-slideright-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
-        </div>
+        <form action="https://www.secureserver.net/products/domain-registration/find" class="sh-nav-slideright-searchgrp">
+            <input class="sh-nav-slideright-search" type="text" name="domainToCheck" placeholder="Find your new domain"><input type="hidden" name="plid" value="575739"><button class="sh-nav-slideright-searchbtn"><i class="fas fa-search" style="margin-right:10px"></i>Find</button>
+        </form>
         <span class="sh-nav-slideright-title">Other Domain Services</span>
         <ul class="sh-nav-slideright-navlinks">
             <li><a href="">Bulk Registration</a></li>
