@@ -1,9 +1,13 @@
 /* COPYRIGHT 2021 SITEHEFT */
 
+var currentPath = new URL(location.href).pathname;
+
 var heroVid = document.querySelector("#sh-hero-vid");
 $(document).ready(() => {
-    var heroVidPlay = heroVid.play();
-    heroVid.onplaying = startHeroTextChange();
+    if (currentPath == "/") {
+        var heroVidPlay = heroVid.play();
+        heroVid.onplaying = startHeroTextChange();
+    }
 });
 
 function startHeroTextChange() {
@@ -95,9 +99,11 @@ window.onscroll = () => {
     } else {
         document.querySelector(".sh-nav").style.backgroundColor = "";
         document.querySelector(".sh-nav").style.boxShadow = "";
-        document.querySelector(".shLogo").style.fill = "#ffffff";
-        document.querySelector(".navGrp1").style.color = "white";
-        document.querySelector(".navGrp2").style.color = "white";
+        if (currentPath == "/") {
+            document.querySelector(".shLogo").style.fill = "#ffffff";
+            document.querySelector(".navGrp1").style.color = "white";
+            document.querySelector(".navGrp2").style.color = "white";
+        }
     }
 }
 
