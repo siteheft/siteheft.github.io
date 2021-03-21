@@ -145,9 +145,11 @@ function navDomainsClick() {
             setTimeout(() => {
                 document.querySelector(".sh-nav").style.backgroundColor = "";
                 document.querySelector(".sh-nav").style.boxShadow = "";
-                document.querySelector(".shLogo").style.fill = "#ffffff";
-                document.querySelector(".navGrp1").style.color = "white";
-                document.querySelector(".navGrp2").style.color = "white";
+                if (currentPath == "/") {
+                    document.querySelector(".shLogo").style.fill = "#ffffff";
+                    document.querySelector(".navGrp1").style.color = "white";
+                    document.querySelector(".navGrp2").style.color = "white";
+                }
             }, 300);
         }
         document.querySelector("#navDomains").classList.remove("sh-nav-selected");
@@ -202,9 +204,11 @@ function navWebsitesClick() {
             setTimeout(() => {
                 document.querySelector(".sh-nav").style.backgroundColor = "";
                 document.querySelector(".sh-nav").style.boxShadow = "";
-                document.querySelector(".shLogo").style.fill = "#ffffff";
-                document.querySelector(".navGrp1").style.color = "white";
-                document.querySelector(".navGrp2").style.color = "white";
+                if (currentPath == "/") {
+                    document.querySelector(".shLogo").style.fill = "#ffffff";
+                    document.querySelector(".navGrp1").style.color = "white";
+                    document.querySelector(".navGrp2").style.color = "white";
+                }
             }, 300);
         }
         document.querySelector("#navWebsites").classList.remove("sh-nav-selected");
@@ -254,9 +258,11 @@ function navHostingClick() {
             setTimeout(() => {
                 document.querySelector(".sh-nav").style.backgroundColor = "";
                 document.querySelector(".sh-nav").style.boxShadow = "";
-                document.querySelector(".shLogo").style.fill = "#ffffff";
-                document.querySelector(".navGrp1").style.color = "white";
-                document.querySelector(".navGrp2").style.color = "white";
+                if (currentPath == "/") {
+                    document.querySelector(".shLogo").style.fill = "#ffffff";
+                    document.querySelector(".navGrp1").style.color = "white";
+                    document.querySelector(".navGrp2").style.color = "white";
+                }
             }, 300);
         }
         document.querySelector("#navHosting").classList.remove("sh-nav-selected");
@@ -308,9 +314,11 @@ function navSecurityClick() {
             setTimeout(() => {
                 document.querySelector(".sh-nav").style.backgroundColor = "";
                 document.querySelector(".sh-nav").style.boxShadow = "";
-                document.querySelector(".shLogo").style.fill = "#ffffff";
-                document.querySelector(".navGrp1").style.color = "white";
-                document.querySelector(".navGrp2").style.color = "white";
+                if (currentPath == "/") {
+                    document.querySelector(".shLogo").style.fill = "#ffffff";
+                    document.querySelector(".navGrp1").style.color = "white";
+                    document.querySelector(".navGrp2").style.color = "white";
+                }
             }, 300);
         }
         document.querySelector("#navSecurity").classList.remove("sh-nav-selected");
@@ -361,9 +369,11 @@ function navMarketingClick() {
             setTimeout(() => {
                 document.querySelector(".sh-nav").style.backgroundColor = "";
                 document.querySelector(".sh-nav").style.boxShadow = "";
-                document.querySelector(".shLogo").style.fill = "#ffffff";
-                document.querySelector(".navGrp1").style.color = "white";
-                document.querySelector(".navGrp2").style.color = "white";
+                if (currentPath == "/") {
+                    document.querySelector(".shLogo").style.fill = "#ffffff";
+                    document.querySelector(".navGrp1").style.color = "white";
+                    document.querySelector(".navGrp2").style.color = "white";
+                }
             }, 300);
         }
         document.querySelector("#navMarketing").classList.remove("sh-nav-selected");
@@ -413,9 +423,11 @@ function navEmailClick() {
             setTimeout(() => {
                 document.querySelector(".sh-nav").style.backgroundColor = "";
                 document.querySelector(".sh-nav").style.boxShadow = "";
-                document.querySelector(".shLogo").style.fill = "#ffffff";
-                document.querySelector(".navGrp1").style.color = "white";
-                document.querySelector(".navGrp2").style.color = "white";
+                if (currentPath == "/") {
+                    document.querySelector(".shLogo").style.fill = "#ffffff";
+                    document.querySelector(".navGrp1").style.color = "white";
+                    document.querySelector(".navGrp2").style.color = "white";
+                }
             }, 300);
         }
         document.querySelector("#navEmail").classList.remove("sh-nav-selected");
